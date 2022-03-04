@@ -134,3 +134,8 @@ public class Conditionals {
         }
     }
 }
+
+//Java conventions ragrding naming.
+// You can't use keywords as names, e.g. you cant use 'int', 'boolean' and so on.
+// Variables & method - incrementOne, birdSound, numberOfWings.
+// class - IncrementOne, BirdSound, NumberOfWings.
