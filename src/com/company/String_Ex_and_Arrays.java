@@ -1,6 +1,5 @@
 package com.company;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -133,15 +132,131 @@ public class String_Ex_and_Arrays {
       // in a string. e.g. a+bc -> checks if there is at least one a in the string tested.
       // * - checks if a character appears zero or more times.
       // ? - checks ir a character appears zero or one time.
+//
+//      Pattern pattern = Pattern.compile("[a-zA-Z0-9]?"); // Patter to check,
+//        // + is for each character, without plus, looks only at one.
+//      Matcher matcher = pattern.matcher("boogieboy109"); // String to check
+//
+//        System.out.println(matcher.matches()); // this returns true if match and false if not.
 
-      Pattern pattern = Pattern.compile("[a-zA-Z0-9]?"); // Patter to check,
-        // + is for each character, without plus, looks only at one.
-      Matcher matcher = pattern.matcher("boogieboy109"); // String to check
+        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input a word:");
+//       // String word = scanner.next(); // for a single word
+//        String word = scanner.nextLine(); // for a sentence
+//
+//        // initialize a counter variable to count the vowel occurances.
+//        int count = 0;
+//        for (int i=0; i<word.length(); i++){
+//            char currentLetter = word.toLowerCase().charAt(i);
+//        switch(currentLetter) {
+//            case 'a':
+//                count++;
+//                break;
+//            case 'e':
+//                count++;
+//                break;
+//            case 'i':
+//                count++;
+//                break;
+//            case 'u':
+//                count++;
+//                break;
+//            case 'y':
+//                count++;
+//                break;
+//            case 'o':
+//                count++;
+//                break;
+//            default:
+//                //System.out.println("Not a vowel");
+//                break;
+//
+//            case 'a':
+//            case 'e':
+//            case 'i':
+//            case 'u':
+//            case 'y':
+//            case 'o':
+//                count++;
+//                break;
+//            default:
+//                //System.out.println("Not a vowel");
+//                break;
+//        }
+//
+//        }
 
-        System.out.println(matcher.matches()); // this returns true if match and false if not.
+//        System.out.println("A number of vowels in a given word is: " + count);
 
+        System.out.println("Input a first number:");
+        String firstNo = scanner.nextLine();
+        System.out.println("Input a second number:");
+        String secondNo = scanner.nextLine();
+        System.out.println("Input a mathematical operator:");
+        char operator = scanner.next().charAt(0);
+        float no1 = Float.parseFloat(firstNo);
+        float no2 = Float.parseFloat(secondNo);
 
+        //char operator = '*';
+        //int bigNumber = 15;
+        //float smallNumber = 3;
 
+        switch (operator) {
+            case '+':
+                System.out.println("The sum is " + (no1 + no2));
+                break;
+            case '-':
+            System.out.println("The difference is " + (no1 - no2));
+            break;
+            case '*':
+            System.out.println("The product is " + (no1 * no2));
+            break;
+            case '/':
+            System.out.println("The qoutient is " + (no1 / no2));
+            break;
+            default:
+            System.out.println("Operator not recognized!");
+            break;
+        }
     }
 
 }
+
+
+//        int counter = 0;
+//        for (int i =0; i<word.length(); i++){
+//            if ('a' == word.toLowerCase().charAt(i) || 'e' == word.toLowerCase().charAt(i) || 'i' == word.toLowerCase().charAt(i)
+//                    || 'y' == word.toLowerCase().charAt(i) || 'u' == word.toLowerCase().charAt(i) || 'o' == word.toLowerCase().charAt(i)){
+//                counter++;
+//            }
+//
+//        }
+//        System.out.println("A number of vowels in a given word is: " + counter);
+
+//        System.out.println("Input a first number:");
+//        String firstNo = scanner.next();
+//        float no1 = Float.parseFloat(firstNo);
+//        System.out.println("Input a second number:");
+//        String secondNo = scanner.next();
+//        float no2 = Float.parseFloat(secondNo);
+//        System.out.println("Input a third number:");
+//        String thirdNo = scanner.next();
+//        float no3 = Float.parseFloat(thirdNo);
+//        System.out.println("Input a fourth number:");
+//        String fourthNo = scanner.next();
+//        float no4 = Float.parseFloat(fourthNo);
+//        System.out.println("Input a fifth number:");
+//        String fifthNo = scanner.next();
+//        float no5 = Float.parseFloat(fifthNo);
+//        System.out.println("Addition of first two numbers: " + (no1+no2));
+//        System.out.println("Subtraction of second two numbers: " + (no3-no4));
+//        System.out.println("Multiplication of first two results: " + (no1+no2) * (no3-no4));
+//        System.out.println("Division of the third result by the fifth number: " + ((no1+no2) * (no3-no4))/ no5);
+
+
+
+
+
+
+
+
