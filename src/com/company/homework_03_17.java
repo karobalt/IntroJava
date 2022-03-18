@@ -55,6 +55,9 @@ public class homework_03_17 {
 
        // String[] phrase = {"I", "like", "potatoes", "Ilikepotatoes"};
 
+        // Ternary operator is a conditional that can be used to decide execution flow on the fly
+        // sout(string.equals(array[array.length -1]) ? "match" : " don't match")
+
         System.out.println("Input a word or a phrase:");
         String input = scanner.nextLine();
         String[] phrase = input.toLowerCase().split(" ");
