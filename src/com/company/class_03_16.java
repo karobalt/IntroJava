@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class class_03_16 {
 
-    public static void main(String[] args) {
+  //  public static void main(String[] args) {
 
         // Task 1
         //  Ask a user to enter a range of numbers and sort that group of numbers in such a way that even numbers
@@ -102,7 +102,24 @@ public class class_03_16 {
 //                System.out.println("Your input numbers do not contain any multiples of 3");
 //
 //            }
-    }
+ //   }
+        public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Input a first number (should be smaller than the second one):");
+            String smallNumber = scanner.nextLine();
+            System.out.println("Input a second number (bigger):");
+            String bigNumber = scanner.nextLine();
+            System.out.println("Input a mathematical operator:");
+            char operator = scanner.next().charAt(0);
+            float no1 = Float.parseFloat(smallNumber);
+            float no2 = Float.parseFloat(bigNumber);
+
+            System.out.println();
+
+        }
+
+
 }
 
 
