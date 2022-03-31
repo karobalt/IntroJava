@@ -79,34 +79,34 @@ public class MethodsIntro {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input first number (should be bigger than the second one):");
-        String smallNumber = scanner.nextLine();
-        System.out.println("Input second number (smaller):");
         String bigNumber = scanner.nextLine();
+        System.out.println("Input second number (smaller):");
+        String smallNumber = scanner.nextLine();
         System.out.println("Input a mathematical operator:");
         char operator = scanner.next().charAt(0);
-        float no1 = Float.parseFloat(smallNumber);
-        float no2 = Float.parseFloat(bigNumber);
+        float no1 = Float.parseFloat(bigNumber);
+        float no2 = Float.parseFloat(smallNumber);
         System.out.println("Your result is:"+ performOperation(no1, no2, operator));
 
     }
 
     public static double performOperation (double no1, double no2, char operator) {
-        double result=0;
+        double result = 0;
         switch (operator) {
             case '+':
-                result = no1 + no2;
-                break;
+                return no1 + no2;
             case '-':
-                result = no1 - no2;
-                break;
+                return no1 - no2;
             case '*':
-                result = no1 * no2;
-                break;
+                return no1 * no2;
             case '/':
-                result = no1 / no2;
+                return no1 / no2;
+            default:
+                System.out.println(operator+"operator is not valid");
+                return 0;
         }
-        return result;
-                }
+    }
+
 
 
     }
