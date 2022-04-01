@@ -144,15 +144,15 @@ public class methods_class_2 {
 
     // Using recursion, write a method that takes a string as a parameter and
     // returns the reverse of the string.
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input a string:");
-        String userInput = scanner.nextLine();
-
-        System.out.println("Your string reversed: " + reverseString(userInput));
-
-    }
+//    public static void main(String[] args) {
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input a string:");
+//        String userInput = scanner.nextLine();
+//
+//        System.out.println("Your string reversed: " + reverseString(userInput));
+//
+//    }
 
     public static String reverseString(String input) {
         if (input.isEmpty()) {
