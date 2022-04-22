@@ -1,0 +1,16 @@
+package homework_04_20;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Student karolina = new Student("Karolina", 26);
+        Student ieva = new Student ("Ieva", 27);
+        Student ilona = new Student ("Ilona", 27);
+
+        karolina.addScore(new Student.Score("Karolina", 26, "Physics", 9));
+
+
+        System.out.println();
+    }
+}
