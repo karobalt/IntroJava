@@ -1,0 +1,33 @@
+package homework_04_20;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Score extends Student {
+
+    private String course;
+    private int scoreValue;
+
+    public Score(String name, int age, String course, int scoreValue) {
+        super(name, age);
+        this.course = course;
+        this.scoreValue = scoreValue;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public int getScoreValue() {
+        return scoreValue;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public void setScoreValue(int scoreValue) {
+        this.scoreValue = scoreValue;
+    }
+}
+
