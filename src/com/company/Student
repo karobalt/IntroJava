@@ -1,0 +1,65 @@
+package homework_04_20;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+
+//    Write a class called Student that has the following properties called name(string),
+//    age(int), scores(arrayList<Score>).
+//    Write another class called Score that has the following properties course(string),
+//    scoreValue(int)
+
+//    Add a method to your students class to get the average score of all the
+//    courses that a particular student offers.
+
+    private String name;
+    private int age;
+    private ArrayList<Score> scores;
+
+    public Student(String name, int age) {
+        this.scores = new ArrayList<Score>();
+        this.name = name;
+        this.age = age;
+    }
+
+    public boolean addScore(Score score){
+        if(scores==null || scores.contains(score)){
+            return false;
+        }
+        scores.add(score);
+        return true;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public ArrayList<Score> getScores() {
+        return scores;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setScores(ArrayList<Score> scores) {
+        this.scores = scores;
+    }
+
+    public int averageScore() {
+        int scoresSum=0;
+        for (int i = 0; i < scores.size(); i++) {
+            scoresSum += i;
+        }
+        return scoresSum/scores.size()-1;
+    }
+}
